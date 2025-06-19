@@ -1,0 +1,109 @@
+.home-container {
+  background-color: #1a1a1a; /* Even darker background for the form container  */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  width: 90%;
+  max-width: 400px; /* Max width for the form  */
+  margin: 20px auto; /* Center the form horizontally and add space from top  */
+  box-sizing: border-box; /* Include padding in width calculation  */
+  display: flex; /* Use flexbox for internal centering  */
+  flex-direction: column; /* Stack children vertically  */
+  align-items: center; /* Center horizontally within container  */
+}
+
+/* Styles for the React logo and title, moved from App.css */
+.Home-logo {
+  height: 8vmin; /* Smaller logo  */
+  pointer-events: none;
+  margin-bottom: 20px; /* Space between logo and form heading */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Home-logo {
+    animation: Home-logo-spin infinite 20s linear; /* Animation for logo  */
+  }
+}
+
+.Home-title {
+  font-size: calc(10px + 2vmin);
+  margin-bottom: 25px; /* Space between title and form heading */
+  color: #61dafb; /* React blue for headings */
+}
+
+@keyframes Home-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.home-container h2 {
+  color: #61dafb; /* React blue for headings  */
+  margin-bottom: 25px;
+  font-size: 1.8em;
+}
+
+.signup-form {
+  width: 100%; /* Ensure form takes full width of its container */
+}
+
+.signup-form .form-group {
+  margin-bottom: 20px;
+  text-align: left; /* Align labels to the left  */
+}
+
+.signup-form label {
+  display: block; /* Label on its own line  */
+  margin-bottom: 8px;
+  color: #ccc; /* Lighter grey for labels  */
+  font-size: 0.9em;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="password"] {
+  width: calc(100% - 20px); /* Full width minus padding  */
+  padding: 12px 10px;
+  border: 1px solid #444; /* Darker border  */
+  border-radius: 5px;
+  background-color: #333; /* Dark input background  */
+  color: white; /* White text in inputs  */
+  font-size: 1em;
+  box-sizing: border-box; /* Include padding in width calculation  */
+}
+
+.signup-form input[type="text"]::placeholder,
+.signup-form input[type="password"]::placeholder {
+  color: #888; /* Lighter grey placeholder text  */
+}
+
+.signup-form input:focus {
+  outline: none;
+  border-color: #61dafb; /* Highlight on focus  */
+  box-shadow: 0 0 0 2px rgba(97, 218, 251, 0.3);
+}
+
+.submit-button {
+  background-color: #61dafb; /* React blue for button  */
+  color: #282c34; /* Dark text for button  */
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%; /* Full width button  */
+  margin-top: 15px;
+}
+
+.submit-button:hover {
+  background-color: #53c5e8; /* Slightly darker blue on hover  */
+  transform: translateY(-2px); /* Slight lift effect  */
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}

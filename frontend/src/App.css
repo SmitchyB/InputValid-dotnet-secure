@@ -1,0 +1,13 @@
+/* Minimal App.css - most styling moved to Home.css */
+.App {
+  text-align: center;
+  background-color: #282c34; /* Dark background for the whole page */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Aligns content from the top */
+  color: white; /* White text for dark background */
+}
+
+/* Any other global styles not specific to the form/logo can go here */
